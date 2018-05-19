@@ -22,9 +22,9 @@ public class move2 : MonoBehaviour {
         }
         if (moved && gameObject.transform.position.y >= destination)
         {
-            if (gameObject.transform.eulerAngles.x <= 300)
+            if (gameObject.transform.eulerAngles.z == 90)
             {
-                gameObject.transform.Rotate(new Vector3(0, speed * Time.deltaTime, 0));
+                gameObject.transform.eulerAngles = new Vector3(0, 90, 190);
             }
         }
 
